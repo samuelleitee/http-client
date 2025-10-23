@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>API Client</title>
-    <link rel="stylesheet" href="./style.css">
-    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
@@ -22,7 +21,7 @@
         </div>
 
         <div class="form-group">
-            <label for="method">M�todo</label>
+            <label for="method">Método</label>
             <select id="method">
                 <option value="GET">GET</option>
                 <option value="POST">POST</option>
@@ -32,17 +31,23 @@
         </div>
 
         <div class="form-group">
-            <label for="headers">Cabe�alhos (JSON)</label>
+            <label for="headers">Cabeçalhos (JSON)</label>
             <textarea id="headers" placeholder='{"Content-Type": "application/json"}'></textarea>
         </div>
 
         <div class="form-group">
-            <label for="body">Corpo da Requisi��o (JSON)</label>
-            <textarea id="body" placeholder='{"nome": "Jo�o"}'></textarea>
+            <label for="body">Corpo da Requisição (JSON)</label>
+            <textarea id="body" placeholder='{"nome": "João"}'></textarea>
         </div>
 
-        <button id="send-request">Enviar Requisi��o</button>
+        <button id="send-request">Enviar Requisição</button>
 
         <div class="response">
             <h2>Resposta</h2>
-            <pre id
+            <pre id="response-output"></pre>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
