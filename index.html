@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Client</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Cliente de API Simples</h1>
+
+        <div class="form-group">
+            <label for="base-url">URL Base</label>
+            <input type="text" id="base-url" placeholder="https://api.exemplo.com" />
+        </div>
+
+        <div class="form-group">
+            <label for="endpoint">Endpoint</label>
+            <input type="text" id="endpoint" placeholder="/usuarios" />
+        </div>
+
+        <div class="form-group">
+            <label for="method">M�todo</label>
+            <select id="method">
+                <option value="GET">GET</option>
+                <option value="POST">POST</option>
+                <option value="PUT">PUT</option>
+                <option value="DELETE">DELETE</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="headers">Cabe�alhos (JSON)</label>
+            <textarea id="headers" placeholder='{"Content-Type": "application/json"}'></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="body">Corpo da Requisi��o (JSON)</label>
+            <textarea id="body" placeholder='{"nome": "Jo�o"}'></textarea>
+        </div>
+
+        <button id="send-request">Enviar Requisi��o</button>
+
+        <div class="response">
+            <h2>Resposta</h2>
+            <pre id
